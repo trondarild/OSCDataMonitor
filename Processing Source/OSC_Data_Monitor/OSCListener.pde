@@ -74,10 +74,11 @@ class MyOSCListener {
       // will be displayed in the draw() loop.
       // if statement prevents adding to much data
       // incase of a data overflow no new data is added...
-      if(monitorList.size()<monitorListLength+25)
-      { monitorList.add((String) monitor);          
+      //if(monitorList.size()<monitorListLength+25)
+      { 
+        monitorList.add((String) monitor);          
       }
-      else 
+      //else 
       { //println("overflow...");
       }
     }

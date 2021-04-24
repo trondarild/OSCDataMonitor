@@ -57,7 +57,8 @@ Button buttonAddPort, buttonEmptyLists;
 RadioButton radio;
 
 void setup() {
-  size(800,630,P2D);
+  size(800,630);
+  
   frameRate(25);
 
   try {
@@ -101,9 +102,10 @@ void setup() {
   listCommonOscPorts.addItem(str(3333),3333);
   listCommonOscPorts.addItem(str(8000),8000);
   listCommonOscPorts.addItem(str(8338),8338);
+  listCommonOscPorts.addItem(str(12001),12001);
 
   // start listening to port 8000 by default
-  startListeningToPort(8000);
+  startListeningToPort(12001);
 
   // field to add a custom port number
   textInput = controlP5.addTextfield("textInput",20,370,170,20);
